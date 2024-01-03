@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Old+Standard+TT:ital@1&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --main-color: #18d3c4;
+  --secondary-color: #fc855b;
+  --bg-color: #ffd435;
+  --text-color: #002f42;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Roboto", "Old+Standard+TT", sans-serif;
+}
+/* Header Nav */
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  position: fixed;
+}
+.header img {
+  height: 75px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.navbar__list a {
+  color: var(--text-color);
+  font-weight: 700;
+}
+#cart {
+  color: var(--secondary-color);
+  font-size: 25px;
+}
+/* menu__toggle display none */
+#menu__toggle {
+  display: none;
+}
+#hamburger {
+  font-size: 2.2em;
+  color: var(--text-color);
+  display: none;
+}
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(254, 216, 53, 1) 64%
+  );
+}
+.hero__img {
+  display: flex;
+  justify-content: right;
+}
+.hero img {
+  height: calc(100vh);
+}
+.hero__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 2.7em;
+  text-align: center;
+  padding-left: 15px;
+}
+/* About */
+.about__info {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  padding: 0 20px;
+}
+.about__info img {
+  height: 80px;
+}
+.about__info p {
+  color: var(--text-color);
+  font-size: 1em;
+  font-family: "Old+Standard+TT";
+  font-style: italic;
+  font-weight: 400;
+}
+/* cards */
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  gap: 10px;
+}
+
+.card__product--main img {
+  width: 400px;
+}
+
+.card__product--main {
+  background-color: white;
+  width: 920px;
+  border: 5px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card__product--pharagraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  gap: 25px;
+  font-weight: 700;
+  padding: 0 10px;
+}
+.card__product--ancla {
+  width: 150px;
+  height: 30px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-weight: 900;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card__product--ancla a {
+  color: var(--text-color);
+}
+.card__product {
+  widows: 920px;
+  max-width: 920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.card__product--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  border: 5px solid var(--main-color);
+  border-radius: 10px;
+  max-height: 200px;
+  min-height: 200px;
+  gap: 10px;
+}
+.card__product--item img {
+  width: 25%;
+}
+/* Contacto */
+.contact {
+  width: 100%;
+  height: 100vh;
+  min-height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 200px;
+}
+.contact__map {
+  display: flex;
+}
+.contact__map iframe {
+  width: 500px;
+  height: 250px;
+}
+
+.contact__info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: var(--text-color);
+  gap: 10px;
+  text-align: center;
+}
+.contact_info i {
+  font-size: 24px;
+  color: var(--color_secondary);
+}
+.social_icons {
+  display: flex;
+  gap: 25px;
+}
+.footer {
+  height: 80px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 1.5em;
+}
+.footer__list a {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 25px;
+}
+.footer img {
+  height: 75px;
+}
