@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Old+Standard+TT:ital@1&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --main-color: #18d3c4;
+  --secondary-color: #fc855b;
+  --bg-color: #ffd435;
+  --text-color: #002f42;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Roboto", "Old+Standard+TT", sans-serif;
+}
+body {
+  background-color: var(--bg-color);
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login img {
+  height: 100px;
+}
+.login {
+  width: 320px;
+  height: 400px;
+  background-color: var(--main-color);
+  border-radius: 10%;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  color: var(--text-color);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.login a {
+  color: var(--text-color);
+}
+.login span {
+  font-size: 0.8em;
+}
+.login input[type="email"],
+input[type="password"] {
+  width: 300px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  font-size: 1em;
+}
+.btn button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
