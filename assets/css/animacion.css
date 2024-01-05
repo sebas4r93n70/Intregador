@@ -1,4 +1,58 @@
+:root {
+  --main-color: #18d3c4;
+  --secondary-color: #fc855b;
+  --bg-color: #ffd435;
+  --text-color: #002f42;
+}
+/* ESTILOS INDEX */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+}
+
+.navbar__list a {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.navbar__list a:not(.i):hover {
+  color: var(--text-color);
+}
+.navbar__list a:not(.i)::after {
+  content: "";
+  background: var(--secondary-color);
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: -100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.navbar__list a:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.card__product--ancla:hover {
+  background-color: var(--text-color);
+  transform: scale(1.1);
+}
+.card__product--ancla:hover a {
+  color: var(--secondary-color);
+}
+
+/*** ESTILOS LOGIN SIGN UP***/
+.btn:hover button {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  transform: scale(1.1);
 }

@@ -57,8 +57,12 @@
   color: var(--text-color);
   font-weight: 700;
 }
+.terminos {
+  padding-top: 15px;
+}
 .terminos,
 .news {
+  padding-top: 5px;
   display: flex;
   gap: 20px;
   font-size: 0.8em;
@@ -72,6 +76,9 @@ input[type="text"] {
   text-align: center;
   font-size: 1em;
 }
+.btn {
+  padding-top: 15px;
+}
 .btn button {
   padding: 10px 20px;
   background-color: var(--secondary-color);
@@ -80,4 +87,18 @@ input[type="text"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+@media (max-width: 996px) {
+  .imagen {
+    display: none;
+  }
+  .log {
+    width: 100%;
+  }
+  .logo img {
+    height: 90px;
+  }
+  .log {
+    gap: 8px;
+  }
 }
