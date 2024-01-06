@@ -265,28 +265,31 @@
     top: 200px;
     z-index: 1;
     color: var(--text-color);
+    font-size: 2em;
   }
   .hero {
     background-color: #fed835;
     background: #fed835;
-  }
-  .hero__img img {
-    mask-image: none;
   }
 
   .about__info {
     height: auto;
     margin-top: 15px;
   }
-  .card__product--main {
-    flex-direction: column;
+  .card__product--main img {
+    width: 300px;
   }
   .card__product--main {
+    flex-direction: column;
     background-color: white;
     width: 95%;
   }
   .card__product--pharagraph {
     padding: 10px 0;
+  }
+  .card__product {
+    flex-direction: column;
+    width: 95%;
   }
   .contact {
     height: auto;
