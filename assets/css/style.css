@@ -14,6 +14,12 @@
   text-decoration: none;
   font-family: "Roboto", "Old+Standard+TT", sans-serif;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* Header Nav */
 .header {
   width: 100%;
@@ -87,16 +93,22 @@
   padding-left: 15px;
 }
 /* About */
+.about {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .about__info {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 25px;
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 .about__info img {
   height: 80px;
@@ -184,13 +196,13 @@
 /* Contacto */
 .contact {
   width: 100%;
-  height: 100vh;
+  max-width: 900px;
   min-height: 530px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
-  margin-top: 250px;
+  margin-top: 30px;
 }
 .contact__map {
   display: flex;
@@ -239,6 +251,17 @@
 .footer img {
   height: 75px;
 }
+@media (max-width: 1220px) {
+  .hero {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(254, 216, 53, 1) 34%
+    );
+  }
+}
+
 @media (max-width: 992px) {
   #hamburger {
     display: block;
@@ -262,7 +285,7 @@
   }
   .hero__title {
     position: absolute;
-    top: 200px;
+    top: 150px;
     z-index: 1;
     color: var(--text-color);
     font-size: 2em;
@@ -270,6 +293,7 @@
   .hero {
     background-color: #fed835;
     background: #fed835;
+    width: 100%;
   }
 
   .about__info {
@@ -277,7 +301,7 @@
     margin-top: 15px;
   }
   .card__product--main img {
-    width: 300px;
+    width: 280px;
   }
   .card__product--main {
     flex-direction: column;
@@ -296,7 +320,32 @@
     flex-direction: column;
   }
   .contact__map iframe {
-    width: 300px;
-    height: 250px;
+    width: 290px;
+    height: 270px;
+  }
+}
+@media (max-width: 760px) {
+  .hero__title {
+    top: 120px;
+  }
+  .card__product--ancla {
+    margin: 15px 0;
+  }
+}
+@media (max-width: 560px) {
+  .hero__title {
+    top: 80px;
+    font-size: 1.8em;
+  }
+  .hero {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__img img {
+    width: 320px;
+  }
+  .card__product--pharagraph {
+    padding: 0 5px;
   }
 }
