@@ -51,8 +51,43 @@ html {
 }
 
 /*** ESTILOS LOGIN SIGN UP***/
-.btn:hover button {
+/* .btn:hover button {
   background-color: var(--text-color);
   color: var(--secondary-color);
   transform: scale(1.1);
+} */
+button:hover {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(-900px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+h1 {
+  animation: slide-left 5s ease-in-out;
+}
+.hero__img {
+  animation: slide-right 4s ease-in-out;
 }
