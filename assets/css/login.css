@@ -42,7 +42,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 .login a {
   color: var(--text-color);
@@ -67,4 +67,12 @@ input[type="password"] {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.1em;
+}
+@media (max-width: 996px) {
+  .main {
+    height: auto;
+  }
+  .login {
+    margin: 25px 0;
+  }
 }

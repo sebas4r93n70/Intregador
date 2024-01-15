@@ -49,7 +49,12 @@ html {
 .card__product--ancla:hover a {
   color: var(--secondary-color);
 }
-
+.hero__btn:hover {
+  background-color: var(--text-color);
+}
+.hero__btn:hover a {
+  color: var(--secondary-color);
+}
 /*** ESTILOS LOGIN SIGN UP***/
 /* .btn:hover button {
   background-color: var(--text-color);
@@ -85,9 +90,22 @@ button:hover {
     transform: translateX(0);
   }
 }
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 h1 {
   animation: slide-left 5s ease-in-out;
 }
 .hero__img {
   animation: slide-right 4s ease-in-out;
+}
+.hero__btn {
+  animation: slide-down 6s ease-in-out;
 }

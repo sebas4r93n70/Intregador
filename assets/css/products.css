@@ -58,6 +58,21 @@
   display: none;
   cursor: pointer;
 }
+
+dialog {
+  max-width: 310px;
+  top: 150px;
+  left: 38%;
+  padding: 40px 70px;
+  border: 8px solid var(--main-color);
+  background-color: var(--secondary-color);
+  border-radius: 2%;
+  color: var(--text-color);
+}
+dialog button {
+  margin-top: 10px;
+}
+
 /* MAIN */
 .main {
   display: flex;
@@ -110,7 +125,7 @@
   align-items: center;
   text-align: center;
   margin-top: 5px;
-  gap: 40px;
+  gap: 10px;
 }
 .card__btns button {
   padding: 10px 20px;
@@ -179,10 +194,22 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
+  .card:hover {
+    transform: none;
+    transition: all 0.8s ease;
+  }
 }
 @media (max-width: 650px) {
   .grid_container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+  dialog {
+    left: 20%;
+  }
+}
+@media (max-width: 420px) {
+  dialog {
+    left: 0;
   }
 }
