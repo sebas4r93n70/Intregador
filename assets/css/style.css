@@ -14,6 +14,9 @@
   text-decoration: none;
   font-family: "Roboto", "Old+Standard+TT", sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -66,6 +69,7 @@
 }
 /* Hero */
 .hero {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -325,18 +329,16 @@
   #menu__toggle:checked ~ .navbar__list {
     display: flex;
   }
-  .hero__title {
-    position: absolute;
-    top: 150px;
-    z-index: 1;
-    color: var(--text-color);
-    font-size: 1.8em;
-    padding: 8px;
-  }
+
   .hero {
     background-color: #fed835;
     background: #fed835;
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .hero__title {
+    font-size: 2.2em;
   }
 
   .about__info {
@@ -350,13 +352,24 @@
     flex-direction: column;
     background-color: white;
     width: 95%;
+    min-height: 438px;
   }
   .card__product--pharagraph {
     padding: 10px 0;
+    gap: 10px;
   }
   .card__product {
     flex-direction: column;
     width: 95%;
+    gap: 15px;
+  }
+  .card__product--item {
+    flex-direction: column;
+    min-height: 438px;
+    width: 100%;
+  }
+  .card__product--item img {
+    width: 280px;
   }
   .contact {
     height: auto;
@@ -371,28 +384,65 @@
     transform: none;
   }
 }
-@media (max-width: 760px) {
-  .hero__title {
-    top: 120px;
-    font-size: 1.6em;
-  }
+
+@media (max-width: 810px) {
   .card__product--ancla {
     margin: 15px 0;
-  }
-}
-@media (max-width: 560px) {
-  .hero__title {
-    top: 80px;
   }
   .hero {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 0;
   }
+  .hero__title {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    color: var(--text-color);
+    font-size: 2.2em;
+    padding: 8px;
+    width: 80%;
+  }
+
   .hero__img img {
-    width: 320px;
+    padding-top: 75px;
   }
   .card__product--pharagraph {
     padding: 0 5px;
+  }
+}
+@media (max-width: 532px) {
+  .hero__title {
+    font-size: 2em;
+  }
+}
+@media (max-width: 482px) {
+  .hero__title {
+    font-size: 1.8em;
+  }
+  .hero__img img {
+    padding-top: 100px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 430px) {
+  .hero__title {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 340px) {
+  .hero__title {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 330px) {
+  .hero__title {
+    font-size: 1.2em;
+  }
+  .hero__img img {
+    padding-top: 110px;
   }
 }
