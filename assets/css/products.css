@@ -81,6 +81,7 @@ dialog button {
   align-items: center;
   width: 100%;
 }
+/* Grid */
 .grid_container {
   max-width: 1000px;
   padding: 100px 0;
@@ -91,7 +92,7 @@ dialog button {
   place-content: center;
   place-items: center;
 }
-
+/* Cards */
 .card {
   width: 300px;
   height: 400px;

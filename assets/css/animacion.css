@@ -4,12 +4,12 @@
   --bg-color: #ffd435;
   --text-color: #002f42;
 }
-/* ESTILOS INDEX */
+/* Index scroll */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
-
+/* Navbar */
 .navbar__list a {
   position: relative;
   z-index: 1;
@@ -42,30 +42,33 @@ html {
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
-.card__product--ancla:hover {
-  background-color: var(--text-color);
-  transform: scale(1.1);
-}
-.card__product--ancla:hover a {
-  color: var(--secondary-color);
-}
+/* Hero */
 .hero__btn:hover {
   background-color: var(--text-color);
+  transition: all 0.5s;
 }
 .hero__btn:hover a {
   color: var(--secondary-color);
+  transition: all 0.5s;
 }
-/*** ESTILOS LOGIN SIGN UP***/
-/* .btn:hover button {
+/* Cards */
+.card__product--ancla:hover {
   background-color: var(--text-color);
-  color: var(--secondary-color);
   transform: scale(1.1);
-} */
+  transition: all 0.5s;
+}
+.card__product--ancla:hover a {
+  color: var(--secondary-color);
+  transition: all 0.5s;
+}
+/* General */
 button:hover {
   background-color: var(--text-color);
   color: var(--secondary-color);
   transform: scale(1.1);
+  transition: all 0.5s;
 }
+/* Animacion */
 @keyframes fade {
   0% {
     opacity: 0;
@@ -101,11 +104,17 @@ button:hover {
   }
 }
 h1 {
-  animation: slide-left 5s ease-in-out;
+  animation: slide-left 1.5s ease-in;
 }
 .hero__img {
-  animation: slide-right 4s ease-in-out;
+  animation: slide-right 1.5s ease-in;
 }
 .hero__btn {
-  animation: slide-down 6s ease-in-out;
+  animation: slide-down 2s ease-in;
+}
+/* Media query */
+@media (max-width: 810px) {
+  .hero__btn {
+    animation: slide-left 1.5s ease-in;
+  }
 }
